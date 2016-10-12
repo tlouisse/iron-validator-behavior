@@ -97,7 +97,7 @@ method.
                 },
 
                 /* For (globally) overriding the validation method of a native validator.
-                 Should only be used when native validity API doesn't work (yet) in a certain browser
+                 * Should only be used when native validity API doesn't work (yet) in a certain browser
                  */
                 overrideValidationMethod: function (validator, fn) {
                     validityFns[validator] = fn.bind(this);
