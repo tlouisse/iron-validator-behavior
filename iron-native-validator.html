@@ -86,9 +86,11 @@ method.
                     // Use native validity API for every validator
                     var mapping = this.validityApiMapping;
                     Object.keys(mapping).forEach(function (validator) {
-                        validityFns[validator] = function (value, input) {
-                            return !input.validity[mapping[validator]];
-                        };
+                        if(!validityFns[validator]) {
+                            validityFns[validator] = function (value, input) {
+                                return !input.validity[mapping[validator]];
+                            };
+                        }
                     }, this);
                 },
 
