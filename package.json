@@ -1,0 +1,41 @@
+{
+  "name": "ing-uic-interaction-state-behavior",
+  "version": "10.0.0",
+  "description": "Responsible for input state meta information (dirty and touched states)",
+  "main": "ing-uic-interaction-state-behavior.html",
+  "keywords": [
+    "web-components",
+    "polymer"
+  ],
+  "team": "The Guide",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "homepage": "",
+  "bugs": {
+    "url": "undefined/issues"
+  },
+  "author": "Thijs Louisse <thijs.louisse@ing.nl>",
+  "engines": {
+    "node": ">=4.0"
+  },
+  "scripts": {
+    "start": "polyserve -o",
+    "test": "wct --skip-selenium-install",
+    "poly-lint": "polylint -i ing-uic-interaction-state-behavior.html --no-recursion",
+    "lint": "ing-kit-quality-checker",
+    "postinstall": "bower install"
+  },
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "bower-art-resolver": "^2.0.6",
+    "bower-ing-resolver": "^1.0.0",
+    "ing-kit-quality-checker": "^1.0.5",
+    "polylint": "^2.10.1",
+    "polyserve": "^0.12.0",
+    "web-component-tester": "^4.0.0",
+    "web-component-tester-istanbul": "^0.10.0"
+  }
+}

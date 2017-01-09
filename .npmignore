@@ -3,7 +3,3 @@ node_modules
 coverage
 .idea
 .vscode
-*.iml
-*.iws
-.DS_Store
-npm-debug.log
